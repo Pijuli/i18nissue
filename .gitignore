@@ -1,0 +1,4 @@
+# gitignore javascript template
+dist
+node_modules
+.nuxt
