@@ -1,12 +1,14 @@
 <template>
   <div style="display: grid">
-    <nuxt-link
-      v-for="l in locales"
-      :key="l.code"
-      :to="switchLocalePath(l.code)"
-    >
-    {{l.code}}
-    </nuxt-link>
+    <client-only>
+      <nuxt-link
+        v-for="l in locales"
+        :key="l.code"
+        :to="switchLocalePath(l.code)"
+      >
+      {{l.code}}
+      </nuxt-link>
+    </client-only>
   </div>
 </template>
 
