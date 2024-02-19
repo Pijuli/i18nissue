@@ -1,14 +1,14 @@
 <template>
   <div>
-    <LanguageSwitcher />
+    <NuxtPage />
+    <br />
     <br />
     <NuxtLink :to="localePath(`/somepage/${$t('slug')}`)">{{ $t('message') }}</NuxtLink>
     <br />
-    <br />
     ---------------
     <br />
+    <LanguageSwitcher />
     <br />
-    <NuxtPage />
   </div>
 </template>
 
